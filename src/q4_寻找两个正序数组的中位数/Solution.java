@@ -30,47 +30,47 @@ public class Solution {
 
         int m = nums1.length;
         int n = nums2.length;
-        int [] nums = new int[m + n];
+        int[] nums = new int[m + n];
 
         int count = 0;
         int i = 0, j = 0;
 
-        while (count != (m + n)){
+        while (count != (m + n)) {
             // m为数组长度 最后一个索引是m-1
-            if (i == m){
-                while (j != n){
+            if (i == m) {
+                while (j != n) {
                     nums[count++] = nums2[j++];
                 }
                 break;
             }
 
-            if (j == n){
-                while (i != m){
+            if (j == n) {
+                while (i != m) {
                     nums[count++] = nums1[i++];
                 }
                 break;
             }
 
-            if (nums1[i] < nums2[j]){
+            if (nums1[i] < nums2[j]) {
                 nums[count++] = nums1[i++];
-            }else {
+            } else {
                 nums[count++] = nums2[j++];
             }
 
         }
 
-        if (count % 2 == 0){
+        if (count % 2 == 0) {
             return (nums[count / 2 - 1] + nums[count / 2]) / 2.0;
-        }else {
+        } else {
             return nums[count / 2];
         }
     }
 
     /**
-     *不需要合并两个有序数组，只要找到中位数的位置即可
+     * 不需要合并两个有序数组，只要找到中位数的位置即可
      * 空间复杂度降到 O(1)，但是时间复杂度仍是 O(m+n)
      */
-    public double findMedianSortedArrays2(int[] nums1, int[] nums2){
+    public double findMedianSortedArrays2(int[] nums1, int[] nums2) {
         int m = nums1.length;
         int n = nums2.length;
         int len = m + n;
@@ -85,15 +85,15 @@ public class Solution {
             left = right;
 
             // 合并了半段条件  加入了 n2Start >= n
-            if (n1Start < m && (n2Start >= n || nums1[n1Start] < nums2[n2Start])){
+            if (n1Start < m && (n2Start >= n || nums1[n1Start] < nums2[n2Start])) {
                 right = nums1[n1Start++];
-            }else {
+            } else {
                 right = nums2[n2Start++];
             }
         }
-        if ((len & 1) == 0){
+        if ((len & 1) == 0) {
             return (left + right) / 2.0;
-        }else {
+        } else {
             return right;
         }
 
