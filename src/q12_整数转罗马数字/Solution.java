@@ -11,7 +11,7 @@ public class Solution {
     String[] symbols = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
 
     public String intToRoman(int num){
-        StringBuffer roman = new StringBuffer();
+        StringBuilder roman = new StringBuilder();
         for (int i = 0; i < values.length; i++) {
             int value = values[i];
             String symbol = symbols[i];
