@@ -17,9 +17,8 @@ public class Solution {
         }
         // 1 > 2 > 3 > 4
         ListNode newHead = head.next;
-        //1 > 4 > 3
         head.next = swapPairs(newHead.next);
-        // 2 > 1 > 4 > 3
+        // 4 > 3
         newHead.next = head;
         return newHead;
     }
