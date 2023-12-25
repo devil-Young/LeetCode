@@ -16,6 +16,7 @@ public class Solution {
     public int[] searchRange(int[] nums, int target) {
         int leftIdx = binarySearch(nums, target, true);
         int rightIdx = binarySearch(nums, target, false) - 1;
+        // 如果数组为空，或者所有数都 < target，则返回 nums.length
         if (leftIdx <= rightIdx && rightIdx < nums.length && nums[leftIdx] == target && nums[rightIdx] == target) {
             return new int[]{leftIdx,rightIdx};
         }
