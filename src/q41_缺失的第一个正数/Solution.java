@@ -3,6 +3,7 @@ package q41_缺失的第一个正数;
 /**
  * @Author: Young
  * @Date: 2024/4/15 21:43
+ * 哈希表
  */
 public class Solution {
     public int firstMissingPositive(int[] nums) {
