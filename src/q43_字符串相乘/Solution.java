@@ -14,6 +14,7 @@ public class Solution {
         int m = num1.length(), n = num2.length();
         for (int i = n - 1; i >= 0 ; i--) {
             StringBuilder curr = new StringBuilder();
+            // add 表示进位
             int add = 0;
             for (int j = n - 1; j > i ; j--) {
                 curr.append(0);
