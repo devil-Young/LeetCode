@@ -20,4 +20,24 @@ public class Solution {
         }
         return count;
     }
+
+    //暴力解法（超时）
+    public int subarraySum1(int[] nums, int k) {
+        int len = nums.length;
+        int count = 0;
+        for (int left = 0; left < len; left++) {
+            for (int right = left; right < len; right++) {
+
+                int sum = 0;
+                for (int i = left; i <= right; i++) {
+                    sum += nums[i];
+                }
+                if (sum == k) {
+                    count++;
+                }
+            }
+        }
+        return count;
+    }
+
 }
