@@ -1,4 +1,4 @@
-package q_142环形链表II;
+package q142_环形链表II;
 
 //方法二：快慢指针
 /*

@@ -1,4 +1,4 @@
-package q_142环形链表II;
+package q142_环形链表II;
 
 import java.util.HashSet;
 import java.util.Set;
