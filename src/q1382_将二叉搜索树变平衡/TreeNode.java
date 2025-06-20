@@ -1,0 +1,27 @@
+package q1382_将二叉搜索树变平衡;
+
+/**
+ * @Author: Young
+ * @Date: 2025/6/20 22:21
+ */
+
+
+public class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+
+    TreeNode() {
+    }
+
+    TreeNode(int val) {
+        this.val = val;
+    }
+
+    TreeNode(int val, TreeNode left, TreeNode right) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
+    }
+}
+
