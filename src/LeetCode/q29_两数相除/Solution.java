@@ -30,11 +30,12 @@ public class Solution {
             divisor = -divisor;
             rev = !rev;
         }
+        return  divided + divisor;
     }
 
     // 快速乘
     public boolean quickAdd(int y, int z, int x) {
         // x ,y 负数  z正数
-
+    return true;
     }
 }

@@ -1,4 +1,4 @@
-package 华为.比赛的冠亚季军;
+package 比赛的冠亚季军;
 
 import java.util.ArrayList;
 import java.util.List;
