@@ -1,4 +1,4 @@
-package q17_电话号码的字母组合;
+package LeetCode.q17_电话号码的字母组合;
 
 import java.util.ArrayList;
 import java.util.HashMap;

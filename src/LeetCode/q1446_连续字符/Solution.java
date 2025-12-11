@@ -1,4 +1,4 @@
-package q1446_连续字符;
+package LeetCode.q1446_连续字符;
 
 /**
  * @Author: Young

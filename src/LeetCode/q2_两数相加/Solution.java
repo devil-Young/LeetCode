@@ -1,4 +1,5 @@
-package q2_两数相加;
+package LeetCode.q2_两数相加;
+
 
 /**
  * @author ：Young

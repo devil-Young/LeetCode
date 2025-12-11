@@ -1,4 +1,4 @@
-package q22_括号生成;
+package LeetCode.q22_括号生成;
 
 import java.util.ArrayList;
 import java.util.List;

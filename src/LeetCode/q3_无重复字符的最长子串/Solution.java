@@ -1,4 +1,4 @@
-package q3_无重复字符的最长子串;
+package LeetCode.q3_无重复字符的最长子串;
 
 import java.util.HashMap;
 import java.util.HashSet;

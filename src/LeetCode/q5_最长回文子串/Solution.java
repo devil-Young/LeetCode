@@ -1,4 +1,4 @@
-package q5_最长回文子串;
+package LeetCode.q5_最长回文子串;
 
 /**
  *

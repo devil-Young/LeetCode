@@ -1,4 +1,4 @@
-package q7_整数反转;
+package LeetCode.q7_整数反转;
 
 /**
  * @Author: Young
