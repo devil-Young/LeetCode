@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 /**
  * @Author: Young
@@ -58,6 +60,7 @@ public class Store {
     private List<ProductObserver> observers = new ArrayList<>();
     private Map<String, Product> products = new HashMap<>();
 
+
     // 注册观察者
     public void addObserver(ProductObserver observer) {
         observers.add(observer);
@@ -76,6 +79,11 @@ public class Store {
             observer.onPublished(p);
         }
     }
+
+/*    说明各个观察者是依次获得的同步通知，如果上一个观察者处理太慢，会导致下一个观察者不能及时获得通知。
+此外，如果观察者在处理通知的时候，发生了异常，还需要被观察者处理异常，才能保证继续通知下一个观察者。
+
+    思考：如何改成异步通知，使得所有观察者可以并发同时处理？*/
 
     public void setProductPrice(String name, double price) {
         Product p = products.get(name);
