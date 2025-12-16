@@ -10,10 +10,25 @@ public class Solution {
     public int findDuplicate(int[] nums) {
         int max = nums.length - 1;
         int min = 1;
-        while (min <= max) {
+        while (min < max) {
             int mid = min + (max -min)/2;
+            // 计数
+            int count = 0;
+            for (int num : nums) {
+                if (num >= min && num <= mid) {
+                    count++;
+                }
+            }
 
+            if (count > (mid - min + 1)) {
+                // 重复数在左区间
+                max = mid;
+            } else {
+                // 重复数在右区间
+                min = mid + 1;
+            }
+            
         }
-        return 1;
+        return min;
     }
 }
