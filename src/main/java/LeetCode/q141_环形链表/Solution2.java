@@ -1,7 +1,7 @@
 package LeetCode.q141_环形链表;
 
 // 方法二：快慢指针
-public class Solution2 {
+public class  Solution2 {
 
     public boolean hasCycle(ListNode head) {
         if (head == null || head.next == null) {
