@@ -1,6 +1,4 @@
-package DesignPattern.创建型模式.FactoryMethod;
-
-import java.util.List;
+package DesignPattern.创建型模式.工厂方法;
 
 /**
  * @Author: Young

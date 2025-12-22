@@ -1,4 +1,4 @@
-package DesignPattern.创建型模式.FactoryMethod;
+package DesignPattern.创建型模式.工厂方法;
 
 import java.math.BigDecimal;
 
