@@ -28,7 +28,6 @@ public class Solution3 {
             if (bound <= length) {
                 min = Math.min(min, bound - (i - 1));
             }
-
         }
         return min == Integer.MAX_VALUE ? 0 : min;
     }
